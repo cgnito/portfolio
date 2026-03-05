@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdulrahmon | portfolio</title>
+    <link rel="icon" href="img/5 yo abdulrahmon.jpg" type="image/x-icon">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 60px 20px;
+            background: #f4f4f4;
+            font-family: 'Courier New', monospace;
+            color: #111;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 720px;
+            margin-bottom: 0;
+        }
+
+        main {
+            width: 100%;
+            max-width: 720px;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 6px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 50px 0;
+        }
+
+        section {
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 25px;
+        }
+
+        .status {
+            font-size: 13px;
+            color: #666;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 8px 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 720px;
+            margin-top: 60px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 40px 18px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header id="hero">
+        <h1>Abdulrahmon Adebayo</h1>
+
+       <div style="display: flex; align-items: center; gap: 30px; flex-wrap: nowrap;">
+            <div>
+                <p style="margin: 0;">electronics & computer engineering student.</p>
+                <br>
+                <p style="margin: 0;">currently: focused on backend engineering & system design.</p>
+                <p>doing something cool :)</p>
+                <br>
+                <p>that's 5 yo abdulrahmon</p>
+            </div>
+
+            <div style="flex-shrink: 0;">
+                <img src="img/5 yo abdulrahmon.jpg" alt="Abdulrahmon" style="width:180px; height:180px; object-fit:cover; border-radius:50%;" title="5-year-old abdulrahmon" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <hr>
+
+        <section id="about">
+            <h2>about</h2>
+
+            <p>first-year electronics & computer engineering student. </p>
+
+            <br>
+
+            <p><strong>currently:</strong></p>
+            <ul>
+                <li>improving in backend engineering</li>
+                <li>learning system design</li>
+                <li>exploring system software</li>
+            </ul>
+
+            <br>
+
+            <p><strong>long term (soon, actually):</strong></p>
+            <ul>
+                <li>embedded systems</li>
+                <li>electronics & hardware</li>
+                <li>systems software</li>
+            </ul>
+
+            <br>
+
+            <p>
+                i just want to get comfortable and proficient with backend engineering first.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="playground">
+            <h2>playground</h2>
+
+            <div class="project">
+                <strong>semantic search engine</strong><br>
+                <ul>
+                    <li>vector-based tweet retrieval using sbert and chromadb.</li>
+                    <li>built asymmetric semantic search over a 384-d dense vector space.</li>
+                    <li>implemented memory-efficient ingestion + batched vectorization.</li>
+                </ul>
+                <span class="status">status: mvp</span><br>
+                <a href="https://github.com/cgnito/semantic-search-engine" target="_blank">repo</a> | <a href="https://abdul-tweet-search.streamlit.app/" target="_blank">demo</a>
+            </div>
+
+            <div class="project">
+                <strong>telegram stream watcher</strong><br>
+                <ul>
+                    <li>automated tool for joining and monitoring telegram livestreams.</li>
+                    <li> will be implementing real-time event listening using the telegram api.</li>
+                    <li>building a web interface to manage channel selection and automation.</li>
+                </ul>
+                <span class="status">status: in progress</span><br>
+                <a href="https://github.com/cgnito/telegram-stream-watcher" target="_blank">repo</a> | <a href="#" target="_blank"> no demo, yet</a>
+            </div>
+
+            <div class="project">
+                <strong>backend roadmap challenges</strong><br>
+                <ul>
+                    <li>collection of backend projects ranging from beginner to advanced.</li>
+                    <li>built cli tools, task trackers, and api consumers using python.</li>
+                    <li>focused on file i/o, external api integration, and logic flow.</li>
+                </ul>
+                <span class="status">status: in progress</span><br>
+                <a href="https://github.com/cgnito/roadmap.sh-backend-projects" target="_blank">repo</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="now">
+            <h2>goals; now — dec, 2026</h2>
+            <ul>
+                <li>achieving proficiency in backend engineering</li>
+                <li>exploring the path toward embedded systems</li>
+                <li>interning at x (formerly twitter) as a swe</li>
+                <li>living life happily :)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>contact</h2>
+            <p><a href="https://x.com/cgnito" target="_blank">x</a></p>
+            <p><a href="mailto:abdulrahmon11052008@gmail.com" target="_blank">email</a></p>
+            <p><a href="https://github.com/cgnito" target="_blank">github</a></p>
+            <p><a href="https://www.linkedin.com/in/abdulrahmon-adebayo-83151536a/" target="_blank">linkedin</a></p>
+        </section>
+
+        <hr>
+
+        <section id="moments">
+            <h2>moments</h2>
+
+            <div class="gallery">
+                <figure>
+                    <img src="img/google-devfest-2025.jpg" alt="google devfest lagos 2025" loading="lazy">
+                    <figcaption>google devfest lagos 2025</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/time.jpg" alt="time flies" loading="lazy">
+                    <figcaption>random from x | time flies</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/suinami lagos | my first tech event.jpg" alt="suinami lagos | my first tech event" loading="lazy">
+                    <figcaption>suinami lagos | my first tech event</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/progress.jpg" alt="progress takes time" loading="lazy">
+                    <figcaption>progress takes time</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        last updated — 2026
+    </footer>
+
+</body>
+</html>
